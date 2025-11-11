@@ -1,0 +1,124 @@
+/* Header */
+.header {
+    background-color: #24292f; /* dark GitHub-style */
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    gap: 1rem;
+  }
+  
+  /* Logo + title container */
+  /* Logo + title container */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* increased gap for better spacing */
+  }
+  
+  .header-left .logo {
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .header-left h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  /* Search bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .search-container input {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .search-container input:focus {
+    border-color: #0969da;
+    box-shadow: 0 0 4px #0969da;
+  }
+  
+  .search-container button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0969da; /* GitHub blue */
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .search-container button:hover {
+    background-color: #005cc5;
+    transform: scale(1.05);
+  }
+  
+  /* Profile */
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #ffffff33;
+    transition: transform 0.2s;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  
+  .profile-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  
+    .header-left {
+      order: 1;
+      width: 100%;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  
+    .search-container {
+      order: 2;
+      width: 100%;
+      justify-content: center;
+      max-width: 400px;
+    }
+  
+    .profile-container {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  

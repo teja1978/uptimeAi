@@ -1,0 +1,58 @@
+.tabs-container {
+    background-color: #fff;
+    border-bottom: 1px solid #d0d7de;
+    position: sticky;
+    top: 56px; /* just below header */
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Tab group wrapper */
+  .mat-mdc-tab-group {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Each tab label */
+  .mat-mdc-tab-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #24292f;
+    text-transform: none;
+    padding: 0.8rem 1.5rem;
+    min-width: auto !important;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* spacing between icon and label */
+  }
+  
+  /* Hover effect */
+  .mat-mdc-tab-label:hover {
+    background-color: #f6f8fa;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  /* Active tab style */
+  .mat-mdc-tab-label.mat-mdc-tab-label-active {
+    color: #0969da;
+    border-bottom: 2px solid #0969da;
+    background-color: #f6f8fa;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  /* Tab content */
+  .tab-content {
+    padding: 1.5rem;
+    background-color: #fff;
+  }
+  
+  /* Optional: slight bottom padding for visual separation */
+  .mat-mdc-tab-header {
+    border-bottom: 1px solid #d8dee4 !important;
+  }
+  
+  

@@ -1,0 +1,29 @@
+<div class="profile-card" *ngIf="user">
+    <img [src]="user?.avatar_url" alt="Profile Picture" class="avatar" />
+  
+    <div class="profile-info">
+      <h2>{{ user?.name }}</h2>
+      <p class="username">@{{ user?.login }}</p>
+      <p class="bio">{{ user?.bio }}</p>
+  
+      <div class="stats">
+        <span class="followers">
+          <mat-icon class="icon">people</mat-icon> {{ user?.followers }} followers
+        </span>
+        <span>·</span>
+        <span class="following">
+          <mat-icon class="icon">person_add</mat-icon> {{ user?.following }} following
+        </span>
+      </div>
+  
+      <div class="info">
+        <p><mat-icon class="icon">business</mat-icon> {{ user?.company }}</p>
+        <p><mat-icon class="icon">place</mat-icon> {{ user?.location }}</p>
+        <p>
+          <mat-icon class="icon">link</mat-icon>
+          <a [href]="user?.blog" target="_blank">{{ user?.blog }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  

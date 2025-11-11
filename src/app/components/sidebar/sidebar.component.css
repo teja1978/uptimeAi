@@ -1,0 +1,22 @@
+.sidebar {
+    width: 260px;
+    border-right: 1px solid #e1e4e8;
+    padding: 1rem;
+  }
+  
+  .avatar {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .username {
+    color: #57606a;
+    margin-bottom: 1rem;
+  }
+  
+  .bio {
+    margin: 0.5rem 0;
+    font-weight: 500;
+  }
+  
